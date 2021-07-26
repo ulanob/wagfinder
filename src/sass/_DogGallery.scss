@@ -1,0 +1,99 @@
+// .gallery-container{
+//   position: sticky;
+// }
+
+.button-container{
+  position: sticky;
+  float: left;
+  display: flex;
+  flex-direction: column;
+  width: 40px;
+  top: 25vh;
+  left: 2vw;
+  button {
+    height: 40px;
+    width: 40px;
+    border: none;
+    border-radius: 50% 50%;
+    margin: 5px 0;
+    transition: all 0.4s;
+  }
+  button:hover,
+  button:focus {
+    background-color: #E09C49;
+  }
+}
+.button-highlight {
+  background-color: #E09C49;
+}
+
+.gallery-divider {
+  padding-top: 20px;
+  display: flex;
+  .gallery-half{
+    display: flex;
+    width: 50%;
+    margin-bottom: 20px;
+    flex-direction: column;
+    img {
+      max-height: 500px;
+      max-width: 400px;
+      margin: 10px;
+    }
+    img:hover,
+    img:focus {
+      transform: scale(1.1);
+      transition-duration: 1s;
+    }
+  }
+  .first-half{
+    margin-top: random(50) + px;
+    align-items: flex-end;
+    img:hover,
+    img:focus {
+      transform-origin: right;
+    }
+  }
+  .second-half {
+    margin-top: random(10) + px;
+    img:hover,
+    img:focus {
+      transform-origin: left;
+    }
+  }
+  .paws {
+    width: 100px;
+    background-image: url(../assets/paws.jpg);
+    background-size: contain;
+  }
+
+}
+
+.arrow {
+  cursor: pointer;
+}
+
+.icon-container {
+  width: 100px;
+  height: 100px;
+  border-radius: 50% 50%;
+  background-color: black;
+  cursor: pointer;
+  position: fixed;
+  right: 25px;
+  bottom: 75px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.4s;
+  .to-top-button {
+    color: white;
+    font-size: 2rem;
+  }
+}
+
+.icon-container:hover{
+  background-color: grey;
+}
+
+
