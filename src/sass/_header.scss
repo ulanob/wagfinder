@@ -1,13 +1,14 @@
 //  Nav.js
 .nav {
   background-color: black;
-  height: 50px;
+  min-height: 50px;
   width: 100%;
   font-size: 0.7rem;
   position: fixed;
   z-index: 20;
 }
 .nav-container{
+  padding: 10px;
   height: 100%;
   display: flex;
   justify-content: space-between;
@@ -40,6 +41,9 @@
       margin: 0 10px;
     }
   }
+  nav label, #toggle {
+    display: none;
+  }
 }
 
 // ExampleDog.js
@@ -54,6 +58,8 @@
 }
 
 .header-box {
+  margin: 0 auto;
+  min-width: 600px;
   width: 45%;
   height: 500px;
   padding: 50px;

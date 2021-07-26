@@ -148,18 +148,20 @@ function App() {
         allBreedsArr={allBreedsArr}
         currentBreed={currentBreed} />
       <div className="header-under-nav">
-        <div className='header-box animate__animated animate__fadeIn'>
-          {
-            currentBreed.length > 0 ?
-              <ExampleDog
-                currentBreed={currentBreed}
-                changeExample={changeExample}
-                exampleDog={exampleDog}
-                toGallery={toGallery}
-                allBreedsArr={allBreedsArr}
-                inputHandler={inputHandler} />
-              : <Greeting />
-          }
+        <div className="wrapper">
+          <div className='header-box animate__animated animate__fadeIn'>
+            {
+              currentBreed.length > 0 ?
+                <ExampleDog
+                  currentBreed={currentBreed}
+                  changeExample={changeExample}
+                  exampleDog={exampleDog}
+                  toGallery={toGallery}
+                  allBreedsArr={allBreedsArr}
+                  inputHandler={inputHandler} />
+                : <Greeting />
+            }
+          </div>
         </div>
       </div>
       <div ref={galleryRef} className="gallery">

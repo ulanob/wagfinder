@@ -256,7 +256,7 @@ h1, h2, p {
 
 .nav {
   background-color: black;
-  height: 50px;
+  min-height: 50px;
   width: 100%;
   font-size: 0.7rem;
   position: fixed;
@@ -264,6 +264,7 @@ h1, h2, p {
 }
 
 .nav-container {
+  padding: 10px;
   height: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -313,6 +314,10 @@ h1, h2, p {
   margin: 0 10px;
 }
 
+.nav-container nav label, .nav-container #toggle {
+  display: none;
+}
+
 .header-under-nav {
   height: 80vh;
   min-height: 600px;
@@ -328,6 +333,8 @@ h1, h2, p {
 }
 
 .header-box {
+  margin: 0 auto;
+  min-width: 600px;
   width: 45%;
   height: 500px;
   padding: 50px;
@@ -529,6 +536,7 @@ select {
   width: 40px;
   top: 25vh;
   left: 2vw;
+  z-index: 10;
 }
 
 .button-container button {
@@ -584,7 +592,7 @@ select {
 }
 
 .gallery-divider .first-half {
-  margin-top: 11px;
+  margin-top: 31px;
   -webkit-box-align: end;
       -ms-flex-align: end;
           align-items: flex-end;
@@ -597,7 +605,7 @@ select {
 }
 
 .gallery-divider .second-half {
-  margin-top: 7px;
+  margin-top: 8px;
 }
 
 .gallery-divider .second-half img:hover,
@@ -682,5 +690,119 @@ select {
 
 .footer .footer-paw-icon {
   font-size: 1rem;
+}
+
+@media (max-width: 950px) {
+  .nav {
+    padding: 10px 0;
+  }
+  .nav-container {
+    display: block;
+  }
+  .nav-container p {
+    width: 100%;
+    margin-bottom: 5px;
+  }
+  .nav-container select {
+    width: 90%;
+  }
+  nav {
+    width: 100%;
+    height: auto;
+  }
+  .nav-container nav label, #toggle {
+    display: block;
+    position: fixed;
+    right: 20px;
+    top: 25px;
+    color: white;
+  }
+  ul.sliding-menu {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    position: fixed;
+    width: 30%;
+    height: 0;
+    margin: 0 auto;
+    overflow: hidden;
+    z-index: 10;
+  }
+  ul.sliding-menu li {
+    margin-bottom: 5px;
+  }
+  ul.sliding-menu a {
+    width: 50%;
+    min-width: 105px;
+    display: block;
+    height: 60px;
+    padding: 15px 0;
+    margin: 0;
+    color: white;
+    text-align: center;
+    text-transform: uppercase;
+    background-color: black;
+    border: 2px solid black;
+  }
+  ul.sliding-menu a:hover,
+  ul.sliding-menu a:focus {
+    background-color: #E09C49;
+    border: 2px solid #E09C49;
+  }
+  #toggle:checked + ul.sliding-menu {
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+    position: fixed;
+    right: -12%;
+    top: 80px;
+    -webkit-transition: all 0.4s;
+    transition: all 0.4s;
+  }
+  #toggle {
+    display: none;
+  }
+  .header-box {
+    margin: 60px auto 0;
+    width: 100%;
+  }
+  .paws {
+    display: none;
+  }
+  .gallery-divider .gallery-half img {
+    max-width: 80%;
+  }
+  .icon-container {
+    width: 50px;
+    height: 50px;
+  }
+  .icon-container .to-top-button {
+    font-size: 1rem;
+  }
+  .footer .footer-container {
+    display: block;
+  }
+  .footer p {
+    text-align: center;
+  }
+}
+
+@media (max-width: 700px) {
+  #toggle:checked + ul.sliding-menu {
+    right: -20vw;
+    width: 50%;
+  }
+  .header-box {
+    min-width: 350px;
+    height: 400px;
+  }
+  .header-box img {
+    max-height: 200px;
+    max-width: 250px;
+  }
+  .header-box .side-arrow {
+    margin: 0 15px 0;
+  }
 }
 /*# sourceMappingURL=styles.css.map */
