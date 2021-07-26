@@ -1,0 +1,26 @@
+{
+  "files": {
+    "main.css": "/wagfinder/static/css/main.5a662ecf.chunk.css",
+    "main.js": "/wagfinder/static/js/main.a536a555.chunk.js",
+    "main.js.map": "/wagfinder/static/js/main.a536a555.chunk.js.map",
+    "runtime-main.js": "/wagfinder/static/js/runtime-main.ae8b9d44.js",
+    "runtime-main.js.map": "/wagfinder/static/js/runtime-main.ae8b9d44.js.map",
+    "static/css/2.a1596f27.chunk.css": "/wagfinder/static/css/2.a1596f27.chunk.css",
+    "static/js/2.909ff2a9.chunk.js": "/wagfinder/static/js/2.909ff2a9.chunk.js",
+    "static/js/2.909ff2a9.chunk.js.map": "/wagfinder/static/js/2.909ff2a9.chunk.js.map",
+    "static/js/3.bbf8db6b.chunk.js": "/wagfinder/static/js/3.bbf8db6b.chunk.js",
+    "static/js/3.bbf8db6b.chunk.js.map": "/wagfinder/static/js/3.bbf8db6b.chunk.js.map",
+    "index.html": "/wagfinder/index.html",
+    "static/css/2.a1596f27.chunk.css.map": "/wagfinder/static/css/2.a1596f27.chunk.css.map",
+    "static/css/main.5a662ecf.chunk.css.map": "/wagfinder/static/css/main.5a662ecf.chunk.css.map",
+    "static/js/2.909ff2a9.chunk.js.LICENSE.txt": "/wagfinder/static/js/2.909ff2a9.chunk.js.LICENSE.txt",
+    "static/media/styles.scss": "/wagfinder/static/media/paws.582e2e9e.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.ae8b9d44.js",
+    "static/css/2.a1596f27.chunk.css",
+    "static/js/2.909ff2a9.chunk.js",
+    "static/css/main.5a662ecf.chunk.css",
+    "static/js/main.a536a555.chunk.js"
+  ]
+}
